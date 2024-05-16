@@ -1,0 +1,26 @@
+
+- Ref Design 
+https://dribbble.com/shots/24064302-Article-News-Website-Concept
+
+🚀Ref Code Hero
+https://github.com/Chzmo/news-blog-website/tree/main/src
+
+- Ref Logo
+Blogen 
+tapi "B" Itu pak ebg white rounded-md
+
+🤖 side menu
+- https://www.alvalens.my.id/ (klo nge lag pake yg dibawqah)
+- https://hamishw.com/
+
+🙏🏻WEATHER REF CodE
+- https://github.com/Sridhar-C-25/weather_app_react_tailwind/blob/main/src/App.jsx ✅
+- https://www.youtube.com/watch?v=UjeXpct3p7M
+
+- submenu diambil dari sini 
+https://github.com/BroKarim-Project/fourth-project/blob/dev/src/components/Navbar/navbar.tsx
+
+😞 Perbaikan Layout
+- karena ternyata klo kita maksa 3 kolom di hero dia g dapat h-screen, maka 3 cuman buat 2 kolom aja
+- kolom tengah card dan cuaca
+- kolo kanan card dan saham1 
