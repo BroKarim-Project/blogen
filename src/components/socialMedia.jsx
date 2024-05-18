@@ -1,8 +1,8 @@
 export default function SocialMedia() {
   return (
     <>
-      <div className="flex justify-between px-6 py-4 w-full bg-white rounded-md ">
-        <a className="text-muted inline-flex items-center rounded-lg p-2.5 text-sm bg-[#f8f4ed] focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400  dark:focus:ring-gray-700" aria-label="Twitter" href="#">
+      <div className="flex justify-between gap-2 items-center px-4 py-2 w-full bg-white rounded-md ">
+        <a className="text-muted inline-flex items-center rounded-lg p-4 text-sm bg-[#f4fafd] focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400  dark:focus:ring-gray-700" aria-label="Twitter" href="#">
           <svg width="24px" height="24px" className="h-8 w-8" viewBox="0 -23.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -21,7 +21,7 @@ export default function SocialMedia() {
           </svg>
         </a>
 
-        <a className="text-muted inline-flex items-center rounded-lg p-2.5 text-sm bg-[#f8f4ed] focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400  dark:focus:ring-gray-700" aria-label="Instagram" href="#">
+        <a className="text-muted inline-flex items-center rounded-lg p-4 text-sm bg-[#f4fafd] focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400  dark:focus:ring-gray-700" aria-label="Instagram" href="#">
           <svg width="24px" height="24px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none" className="h-8 w-8">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -35,7 +35,7 @@ export default function SocialMedia() {
           </svg>
         </a>
 
-        <a className="text-muted inline-flex items-center rounded-lg p-2.5 text-sm bg-[#f8f4ed] focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400  dark:focus:ring-gray-700" aria-label="Facebook" href="#">
+        <a className="text-muted inline-flex items-center rounded-lg p-4 text-sm bg-[#fff7f7] focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400  dark:focus:ring-gray-700" aria-label="Facebook" href="#">
           <svg width="24px" height="24px" className="h-8 w-8" viewBox="0 -7 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -59,7 +59,7 @@ export default function SocialMedia() {
         </a>
 
         <a
-          className="text-muted inline-flex items-center rounded-lg p-2.5 text-sm bg-[#f8f4ed] focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400  dark:focus:ring-gray-700"
+          className="text-muted inline-flex items-center rounded-lg p-4 text-sm bg-[#F4FAFD] focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400  dark:focus:ring-gray-700"
           aria-label="Github"
           href="https://github.com/onwidget/tailnext"
         >
@@ -84,42 +84,7 @@ export default function SocialMedia() {
             </g>
           </svg>
         </a>
-        {/* <div className=" flex justify-between gap-4 items-center h-full ">
-        </div> */}
       </div>
-      {/* <div className="flex gap-2 justify-between items-center w-full px-4  ">
-        <a
-          className="text-muted inline-flex items-center rounded-lg p-2.5 text-sm bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400  dark:focus:ring-gray-700"
-          aria-label="Twitter"
-          href="#"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5">
-            <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z"></path>
-          </svg>
-        </a>
-        <a
-          className="text-muted inline-flex items-center rounded-lg p-2.5 text-sm hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
-          aria-label="Instagram"
-          href="#"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5">
-            <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
-            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-            <path d="M16.5 7.5l0 .01"></path>
-          </svg>
-        </a>
-        <a
-          className="text-muted inline-flex items-center rounded-lg p-2.5 text-sm hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
-          aria-label="Instagram"
-          href="#"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5">
-            <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
-            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-            <path d="M16.5 7.5l0 .01"></path>
-          </svg>
-        </a>
-      </div> */}
     </>
   );
 }

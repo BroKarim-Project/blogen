@@ -79,8 +79,8 @@ const ShowWeather = () => {
   }, []);
   return (
     <>
-      <div className="w-[340px] bg-[#e7e6d5] block px-2  rounded-md  relative  md:w-full ">
-        <div className="w-full   flex items-start">
+      <div className="w-[340px] bg-[#FFF9EC] block px-2  rounded-md  relative  md:w-full ">
+        <div className="w-full   flex items-center">
           {' '}
           <input
             type="text"
@@ -90,7 +90,20 @@ const ShowWeather = () => {
           p-1   flex-1 bg-transparent"
           />
           <button onClick={fetchWeather}>
-            <img src="https://cdn-icons-png.flaticon.com/512/758/758651.png" alt="..." className="w-6" />
+            <svg width="64px" height="64px" className="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                {' '}
+                <path
+                  d="M16.6725 16.6412L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>{' '}
+              </g>
+            </svg>
           </button>
         </div>
         <hr className="w-full border-black border" />
@@ -103,17 +116,17 @@ const ShowWeather = () => {
             ) : (
               showWeather && (
                 <div className="text-center flex justify-between items-center my-2 gap-6 ">
-                  {apiData && <p className="text-base font-semibold">{apiData?.name + ' ' + apiData?.sys?.country}</p>}
+                  {apiData && <p className="text-base font-medium">{apiData?.name + ' ' + apiData?.sys?.country}</p>}
                   <div>
                     <img src={showWeather[0]?.img} alt="..." className="w-10 mx-auto" />
-                    <h3 className="text-base font-bold text-zinc-800">{showWeather[0]?.type}</h3>
+                    <h3 className="text-base font-medium text-zinc-800">{showWeather[0]?.type}</h3>
                   </div>
 
                   {apiData && (
                     <>
-                      <div className="flex justify-center">
+                      <div className="flex justify-center items-center">
                         <img src="https://cdn-icons-png.flaticon.com/512/7794/7794499.png" alt="..." className="h-9 mt-1" />
-                        <h2 className="text-base font-extrabold">{apiData?.main?.temp}&#176;C</h2>
+                        <h2 className="text-base font-medium">{apiData?.main?.temp}&#176;C</h2>
                       </div>
                     </>
                   )}
@@ -121,10 +134,6 @@ const ShowWeather = () => {
               )
             )}
           </div>
-          {/* <div className="flex gap-2  items-center">
-            <h2 className="font-bold text-xl">31C</h2>
-            <p className="text-sm font-medium ">Celcius</p>
-          </div> */}
         </div>
       </div>
     </>
