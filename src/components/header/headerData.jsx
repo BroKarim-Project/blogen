@@ -1,5 +1,4 @@
-// di jsx kita g harus buat tipe data untuk id, title dll
-// sederhananya JavaScript (JSX) tidak akan melakukan pemeriksaan tipe
+
 export const navLists = [
   {
     id: 1,

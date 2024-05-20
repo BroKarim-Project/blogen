@@ -79,7 +79,7 @@ const ShowWeather = () => {
   }, []);
   return (
     <>
-      <div className="w-[340px] bg-[#FFF9EC] block px-2  rounded-md  relative  md:w-full ">
+      <div className="bg-white border-[0.5px] border-[#f7f7f7] mb-1  block px-2  rounded-md  relative  md:w-full ">
         <div className="w-full   flex items-center">
           {' '}
           <input

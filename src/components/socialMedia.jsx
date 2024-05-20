@@ -1,7 +1,7 @@
 export default function SocialMedia() {
   return (
     <>
-      <div className="flex justify-between gap-2 items-center px-4 py-2 w-full bg-white rounded-md ">
+      <div className="flex justify-between gap-2 items-center px-4 py-1 w-full bg-white rounded-md ">
         <a className="text-muted inline-flex items-center rounded-lg p-4 text-sm bg-[#f4fafd] focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400  dark:focus:ring-gray-700" aria-label="Twitter" href="#">
           <svg width="24px" height="24px" className="h-8 w-8" viewBox="0 -23.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>

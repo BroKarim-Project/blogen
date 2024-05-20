@@ -3,10 +3,8 @@ import Hero from './components/hero';
 function App() {
   return (
     <>
-      <div className='overflow-hidden h-screen'>
-        <Header />
-        <Hero />
-      </div>
+      <Header />
+      <Hero />
     </>
   );
 }

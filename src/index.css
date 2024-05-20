@@ -6,3 +6,12 @@
 * {
   font-family: 'Roboto Condensed', sans-serif;
 }
+
+.hero::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.hero::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}

@@ -79,12 +79,12 @@ const NavAnim = ({ isNavOpen, setIsNavOpen }) => {
       });
   }
   const itemVariants = {
-    open: (custom) => ({
+    open: () => ({
       opacity: 1,
       x: 0,
       rotate: 0,
       transition: {
-        delay: custom,
+        delay: 0.1,
         type: 'spring',
         stiffness: 400,
         damping: 40,
@@ -110,37 +110,37 @@ const NavAnim = ({ isNavOpen, setIsNavOpen }) => {
         animate={isNavOpen ? 'open' : 'closed'}
         initial={false}
       >
-        <div className="relative backdrop-blur-sm opacity-95 flex flex-col items-center space-x-8 min-h-[100vh] bg-gray-700 min-w-[100vw] ">
+        <div className="relative backdrop-blur-sm opacity-95 flex flex-col items-center space-x-8 min-h-[100vh] bg-[#ececec] min-w-[100vw] ">
           <div className="flex flex-col items-center space-y-8 my-auto mx-0">
             {/* title */}
-            <motion.h1 variants={itemVariants} animate={isNavOpen ? 'open' : 'closed'} className="text-6xl font-bold text-white ">
+            <motion.h1 variants={itemVariants} animate={isNavOpen ? 'open' : 'closed'} className="text-6xl font-bold text-black ">
               Menu
             </motion.h1>
             <a href="/#home">
-              <div className="text-2xl font-bold text-white" onClick={handleItemClick}>
-                <motion.h2 className="text-white" variants={itemVariants} animate={isNavOpen ? 'open' : 'closed'} custom={0.1}>
-                  Home
+              <div className="text-2xl font-bold text-black" onClick={handleItemClick}>
+                <motion.h2 className="text-black" variants={itemVariants} animate={isNavOpen ? 'open' : 'closed'} >
+                  Stories
                 </motion.h2>
               </div>
             </a>
             <a href="/about">
-              <div onClick={handleItemClick} className="text-2xl font-bold text-white">
-                <motion.h2 className="text-white" variants={itemVariants} animate={isNavOpen ? 'open' : 'closed'} custom={0.2}>
-                  About
+              <div onClick={handleItemClick} className="text-2xl font-bold text-black">
+                <motion.h2 className="text-black" variants={itemVariants} animate={isNavOpen ? 'open' : 'closed'} >
+                  Community
                 </motion.h2>
               </div>
             </a>
             <a href="/projects">
-              <div onClick={handleItemClick} className="text-2xl font-bold text-white">
-                <motion.h2 className="text-white" variants={itemVariants} animate={isNavOpen ? 'open' : 'closed'} custom={0.3}>
-                  Projects
+              <div onClick={handleItemClick} className="text-2xl font-bold text-black">
+                <motion.h2 className="text-black" variants={itemVariants} animate={isNavOpen ? 'open' : 'closed'} >
+                  Creator
                 </motion.h2>
               </div>
             </a>
             <a href="/#contact">
-              <div onClick={handleItemClick} className="text-2xl font-bold text-white">
-                <motion.h2 className="text-white" variants={itemVariants} animate={isNavOpen ? 'open' : 'closed'} custom={0.4}>
-                  Contact
+              <div onClick={handleItemClick} className="text-2xl font-bold text-black">
+                <motion.h2 className="text-black" variants={itemVariants} animate={isNavOpen ? 'open' : 'closed'} >
+                  Subscribe
                 </motion.h2>
               </div>
             </a>
@@ -169,10 +169,10 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full py-2 absolute left-0 top-0  flex justify-between items-center">
+    <header className="w-full   py-2   flex justify-between items-center">
       <nav
         className={` navbar px-10 flex w-screen items-center transition-colors ease duration-500 ${
-          isNavOpen ? 'backdrop-filter backdrop-blur-md bg-gray-700 bg-opacity-50' : 'backdrop-filter backdrop-blur-md'
+          isNavOpen ? 'backdrop-filter backdrop-blur-md bg-transparent bg-opacity-50' : 'backdrop-filter backdrop-blur-md'
         } inset-0  bg-opacity-50  z-50  `}
       >
         {/* sebelah kiri */}
